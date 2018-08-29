@@ -1,0 +1,23 @@
+{
+  "name": "project-server",
+  "version": "1.0.0",
+  "description": "this is the server for the project",
+  "main": "index.js",
+  "author": "udendu abasili",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel . --ignore node_modules,build --out-dir build",
+    "start": "nodemon -r babel-register server.js",
+    "start:prod": "node build/server.js",
+    "client": "cd.. && cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.10"
+  }
+}
