@@ -1,0 +1,8 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "the starter package",
+  "main": "index.js",
+  "author": "udendu abasili",
+  "license": "MIT"
+}
